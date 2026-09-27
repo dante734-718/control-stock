@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Control de Stock</h1>
+
+    <div class="formulario">
+        <h2>Agregar producto</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre del producto">
+        <input type="number" id="cantidad" placeholder="Cantidad">
+        <input type="number" id="precio" placeholder="Precio">
+
+        <button onclick="agregarProducto()">Agregar</button>
+    </div>
+
+    <h2>Productos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        <tbody id="listaProductos">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
